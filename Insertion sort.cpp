@@ -2,8 +2,7 @@
 using namespace std;
 
 
-void
-printarr (vector < int >&a)
+void printarr (vector < int >&a)
 {
 
   for (int i = 0; i < a.size (); i++)
@@ -14,14 +13,13 @@ printarr (vector < int >&a)
 }
 
 
-void
-swap (vector < int >&a, int j, int i)
+/*void swap (vector < int >&a, int j, int i)
 {
   int t = a[j];
   a[j] = a[i];
   a[i] = t;
   return;
-}
+}*/
 
 void insertion_sort(vector<int> &a){
     int n=a.size();
@@ -45,6 +43,6 @@ main ()
 {
 
   vector < int >a = { 25, 360, 39, 9000, 1000 };
-  selection_sort (a);
+  insertion_sort (a);
   return 0;
 }
