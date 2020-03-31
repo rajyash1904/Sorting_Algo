@@ -2,8 +2,7 @@
 using namespace std;
 
 
-void
-printarr (vector < int >&a)
+void printarr (vector < int >&a)
 {
 
   for (int i = 0; i < a.size (); i++)
@@ -14,8 +13,7 @@ printarr (vector < int >&a)
 }
 
 
-void
-swap (vector < int >&a, int j, int i)
+void swap (vector < int >&a, int j, int i)
 {
   int t = a[j];
   a[j] = a[i];
@@ -23,8 +21,7 @@ swap (vector < int >&a, int j, int i)
   return;
 }
 
-void
-bubble_sort (vector < int >&a)
+void bubble_sort (vector < int >&a)
 {
   int n = a.size ();
   bool swp = false;
@@ -47,11 +44,10 @@ bubble_sort (vector < int >&a)
   return;
 }
 
-int
-main ()
+int main ()
 {
 
   vector < int >a = { 25, 360, 39, 9000, 1000 };
-  selection_sort (a);
+  bubble_sort (a);
   return 0;
 }
